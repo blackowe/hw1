@@ -59,7 +59,8 @@ class TestCase(unittest.TestCase):
 
     def test_visa4(self):  # WORKS - bug 8
         """
-        Verifies Visa cards with valid length(16), valid prefix(4), valid check sum
+        Verifies Visa cards.
+        valid length(16), valid prefix(4), valid check sum
         Picked using Parition Testing
         """
         card_str = 4709196844600843  # valid check sum
@@ -68,7 +69,8 @@ class TestCase(unittest.TestCase):
 
     def test_visa5(self):  # WORKS - bug 4
         """
-        Verifies Visa cards with valid length(16), valid prefix(4), INVLAID check sum
+        Verifies Visa cards.
+        Valid length(16), valid prefix(4), INVLAID check sum
         Picked using Parition Testing
         """
         card_str = 4709196844600840  # not valid check sum
@@ -89,7 +91,8 @@ class TestCase(unittest.TestCase):
 
     def test_mc2(self):  # WORKS - bug 9
         """
-        Verifies Mastercard. Valid length, check sum, prefix - on boundary
+        Verifies Mastercard.
+        Valid length, check sum, prefix - on boundary
         Picked using Boundary Testing
         """
         card_str = 2221078240118328
