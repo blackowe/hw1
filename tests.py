@@ -80,16 +80,17 @@ class TestCase(unittest.TestCase):
 
     def test_mc(self):
         """
-        did not work
-        prefix 53
+        did not work ?
+        Verifies MasterCard. Valid lenghth, check sum, prefix
+        Picked using Boundary Testing
         """
         card_str = 5372079127752148
         self.assertTrue(credit_card_validator(card_str))
 
-    def test_mc2(self):
+    def test_mc2(self):  # WORKS - bug 9
         """
-        prefix 2221
-        WORKS - bug 9
+        Verifies Mastercard. Valid length, check sum, prefix - on boundary
+        Picked using Boundary Testing
         """
         card_str = 2221078240118328
         self.assertTrue(credit_card_validator(card_str))
